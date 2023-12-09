@@ -2,15 +2,27 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #232023;
 }
+
 h3 {
   padding: 1em;
+}
+
+.custom-header-color {
+	color: #fc0;
 }
 
 .grid-container{
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr;
 	grid-gap: 20px;
+}
+
+.card-img-top{
+	height:400px;
+	width:200px;
+	aspect-ratio: 3/2;
 }
 
 /* Custom CSS to remove link color */
@@ -63,4 +75,12 @@ h3 {
 /* Custom CSS to remove space between the two small tags */
 .remove-space {
   margin-bottom: 0;
+}
+
+@media(max-width:768px){
+	.grid-container{
+	display: grid;
+	grid-template-columns:1fr;
+	grid-gap: 20px;
+}
 }
